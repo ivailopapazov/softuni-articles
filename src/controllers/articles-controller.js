@@ -17,7 +17,7 @@ module.exports = {
         let article = new Article({
             title: req.body.title,
             content: req.body.content,
-            author: 'Pesho'
+            author: req.body.author
         });
 
         article.save(function(err, dbArticle) {
