@@ -1,6 +1,14 @@
 const Article = require('../models/article');
 
 module.exports = {
+    index(req, res) {
+        Article.find({})
+            .then(function(articles) {
+                res.render('articles/index', { articles });
+            });
+
+    },
+
     getCreate(req, res) {
         res.render('articles/create');
     },
