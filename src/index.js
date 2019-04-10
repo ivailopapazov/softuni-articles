@@ -16,4 +16,8 @@ app.get('/', (req, res) => {
     res.render('home/index');
 });
 
+app.get('/articles', (req, res) => {
+    res.render('articles/index');
+})
+
 app.listen(3000, () => console.log(`Listening on port 3000...`));
