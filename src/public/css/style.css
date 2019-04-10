@@ -1,7 +1,11 @@
 .article-list {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
 }
 
 .article-list .card {
-    justify-content: space-between;
+    margin-top: 20px;
+    min-width: 200px;
 }
