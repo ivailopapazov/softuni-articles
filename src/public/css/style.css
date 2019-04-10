@@ -1,0 +1,7 @@
+.article-list {
+    display: flex;
+}
+
+.article-list .card {
+    justify-content: space-between;
+}
