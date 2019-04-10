@@ -9,6 +9,13 @@ module.exports = {
 
     },
 
+    getByAuthor(req, res) {
+        Article.find({author: req.params.name})
+            .then(function(data) {
+                res.render('articles/index', {articles: data});
+            });
+    },
+
     getCreate(req, res) {
         res.render('articles/create');
     },
